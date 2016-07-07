@@ -13,7 +13,8 @@
 			$(this).find(".headContent").stop().show().siblings('.bodyContent').hide().end().end().siblings("li").find(".headContent").hide().siblings('.bodyContent').show();
 		});
 		$("#accordion").mouseleave(function() {
-			$(this).find('li').stop(true,true).animate({"width":240},500).find(".headContent").show().siblings('.bodyContent').hide();
+			$(this).children('li').stop(true,true).animate({"width":240},500);
+			$(this).children('li').find(".headContent").show().siblings('.bodyContent').hide();
 		});
 	});
 	</script>
