@@ -3,15 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<title>手风琴效果</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#accordion li").hover(function () {
+			$(this).stop().animate({"width":804},500).siblings("li").stop().animate({"width":52},500);
+			$(this).find(".headContent").stop().show().siblings('.bodyContent').hide().end().end().siblings("li").find(".headContent").hide().siblings('.bodyContent').show();
+		});
+		$("#accordion").mouseleave(function() {
+			$(this).find('li').stop(true,true).animate({"width":240},500).find(".headContent").show().siblings('.bodyContent').hide();
+		});
+	});
+	</script>
 </head>
 <body>
-	<ul>
+	<ul id="accordion">
 		<li>
 			<a href="javascript:">
 				<p class="headContent">第一张</p>
-				<p class="bodyContent">第一张</p>
 				<div class="imgContent"></div>
+				<p class="bodyContent">
+					<span>第一张</span>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:">
+				<p class="headContent blackBg">第2张</p>
+				<div class="imgContent secondImg"></div>
+				<p class="bodyContent">
+					<span>第2张</span>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:">
+				<p class="headContent">第3张</p>
+				<div class="imgContent thirdImg"></div>
+				<p class="bodyContent">
+					<span>第3张</span>
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:">
+				<p class="headContent blackBg">第4张</p>
+				<div class="imgContent forthImg"></div>
+				<p class="bodyContent">
+					<span>第4张</span>
+				</p>
 			</a>
 		</li>
 	</ul>
