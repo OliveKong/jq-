@@ -2,7 +2,7 @@
 	height: 555px;
 	width: 970px;//实际总宽为960，这里要设置的比总宽大一些
 	overflow: hidden;
-	background: #000;
+	/*background: #000;*/
 }
 #accordion li{
 	float: left;
