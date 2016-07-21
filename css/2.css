@@ -1,0 +1,67 @@
+#accordion{
+	height: 555px;
+	width:960px;
+	overflow: hidden;
+	/*background: #000;*/
+}
+#accordion li{
+	float: left;
+	width: 240px;
+	height: 100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+}
+#accordion li:nth-of-type(1){
+	background-image: url(../img/index/4-1.jpg);
+}
+#accordion li:nth-of-type(2){
+	background-image: url(../img/index/4-2.jpg);
+}
+#accordion li:nth-of-type(3){
+	background-image: url(../img/index/4-3.jpg);
+}
+#accordion li:nth-of-type(4){
+	background-image: url(../img/index/4-4.jpg);
+}
+/*#accordion li>a{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}*/
+.headContent{
+	width: 100%;
+	height: 40px;
+	background: rgba(255,255,255,0.6);
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	line-height: 40px;
+}
+.blackBg{
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+}
+.bodyContent{
+	display: block;
+	width: 25px;
+	line-height: 25px;
+	height: 75px;
+	font-weight: bold;
+	display: none;
+	color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -38px;
+	margin-left: 13px;
+}
+.imgContent{
+	width: 100%; height: 100%;
+	background: rgba(255,255,255,0.6);
+	display: none;
+}
